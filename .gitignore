@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# coverage
+coverage/
+
+# lock_files
+*.lock
+*.lockb
+package-lock.json
+pnpm-lock.yaml
+
+# minified
+*.min.js
+*.min.css
+
+# environment
+.env
+.env.*
+!.env.example
+
+# logs
+logs/
+*.log
+
+# ide
+.DS_Store
+
+# ocr_models (downloaded by npm run fetch-ocr-models)
+public/ocr-models/
+
+# ocr_parity_fixtures (copyrighted probe pages, never committed)
+tools/ocr-parity/fixtures/

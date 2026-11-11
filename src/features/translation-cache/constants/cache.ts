@@ -1,0 +1,2 @@
+export const MAX_CACHED_PAGE_READINGS = 2000;
+export const QUOTA_RECOVERY_KEEP_RATIO = 0.9;

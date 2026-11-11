@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.app.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "../../node_modules/.tmp/tsconfig.ocr-parity.tsbuildinfo"
+  },
+  "include": ["main.ts", "lib"]
+}

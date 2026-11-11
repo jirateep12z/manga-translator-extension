@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCR parity</title>
+    <style>
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body data-parity-status="running">
+    <h1>OCR parity</h1>
+    <p id="parity-status" role="status">Starting…</p>
+    <section aria-labelledby="parity-summary-heading">
+      <h2 id="parity-summary-heading">Summary</h2>
+      <table id="parity-groups"></table>
+      <pre id="parity-summary"></pre>
+    </section>
+    <section aria-labelledby="parity-failures-heading">
+      <h2 id="parity-failures-heading">Failed reference lines</h2>
+      <div id="parity-failures"></div>
+    </section>
+    <section aria-labelledby="parity-tiles-heading">
+      <h2 id="parity-tiles-heading">Tiles</h2>
+      <p>
+        Solid blue boxes: engine lines. Dashed red boxes: regions, with their
+        IDs. Dotted orange boxes: reference lines that did not match.
+      </p>
+      <div id="parity-tiles"></div>
+    </section>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
